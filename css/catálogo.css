@@ -1,0 +1,160 @@
+/*header*/
+
+.header-catálogo {
+    background-image: url("/images/captainmarvelheader.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 110vh;
+}
+
+.title-header-catálogo {
+    width: auto;
+    height: 12rem;
+    position: absolute;
+    left: 8rem;
+    bottom: 1px;
+    top: 20rem;
+}
+
+.navbar-catálogo {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+
+.nav-itens-catálogo {
+    display: flex;
+    gap: 20rem;
+    padding-left: 2.5rem;
+}
+
+.nav-itens-catálogo a {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-itens-catálogo li a:hover {
+    color: rgb(194, 194, 194);
+    text-decoration: underline #fe7467;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 1px;
+}
+
+.logo-catálogo {
+    width: 10rem;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-catálogo {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .nav-itens-catálogo {
+        gap: 1.5rem;
+        padding-left: 0%;
+    }
+
+    .title-header-catálogo {
+        width: 0px;
+    }
+
+    .header-catálogo {
+        background-image: url(/images/captainmarvelheader_Mobile.jpg);
+    }
+}
+
+/*section*/
+
+.section-catálogo h2 {
+    text-align: center;
+    color: #000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    padding-top: 10px;
+}
+
+.section-catálogo img {
+    width: 10rem;
+}
+
+.section-catálogo button {
+    background: linear-gradient(#fe7467, #fc3836);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    margin-top: 12px;
+    font-size: 20px;
+}
+
+.section-catálogo button:hover {
+    background-color: #fc3836;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.section-itens {
+    display: flex;
+    justify-content: space-around;
+}
+
+.section-itens-2 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.nome-item{
+    width: 75%;
+}
+
+.preço {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .section-catálogo {
+        justify-content: center;
+    }
+
+    .section-itens {
+        display: inline-block;
+        padding: 1rem 0;
+    }
+
+    .section-itens p{
+        font-size: 1.5rem;
+        width: 70%;
+        text-align: center;
+    }
+
+    .section-itens-2 {
+        display: inline-block;
+        padding: 1rem 0;
+    }
+
+    .section-itens-2 p{
+        font-size: 1.5rem;
+        width: 70%;
+        text-align: center;
+    }
+
+    .section-itens li {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    .section-itens-2 li {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}

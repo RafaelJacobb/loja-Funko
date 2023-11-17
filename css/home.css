@@ -1,0 +1,193 @@
+/* header */
+
+.header{
+    background-image: url("/images/spidermanheader.jpg");
+    background-size: cover;
+    height: 110vh;
+    position: relative;
+    
+}
+
+
+.navbar{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+
+.nav-itens{
+display: flex;
+gap: 20rem;
+padding-left: 2.5rem;
+
+}
+
+.nav-itens a{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo-home{
+    width: 10rem;
+}
+
+.nav-itens li a:hover{
+    color: rgb(194, 194, 194);
+    text-decoration: underline #fe7467;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 1px;
+}
+
+
+.title-header{
+    width: auto;
+    height: 16rem;
+    position: absolute;
+    left: 6rem;
+    bottom: 16rem;
+}
+
+@media screen and (max-width: 768px){
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .nav-itens{
+        gap: 1.5rem;
+        padding-left: 0%;
+    }
+
+    .title-header{
+        height: 10rem;
+        left: 2.5rem;
+        bottom: 10rem;
+    }
+
+    .header{
+        background-image: url(/images/spidermanheader_mobile.jpg);
+    }
+}
+
+/* main */
+/* quem somos */
+
+.section-quem-somos{
+    background-image: url("/images/thor_header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-quem-somos h2{
+    padding: 20px 0;
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.section-quem-somos p{
+    color: #fff;
+    font-size: 1.5rem;
+    width: 50%;
+    padding: 0 100px;
+}
+
+.quem-somos-text{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    padding-bottom: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+    .section-quem-somos p{
+        width: 100%;
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .section-quem-somos{
+        background: linear-gradient(#fe7467, #fc3836);
+    }
+}
+
+/* catálogo */
+
+.catálogo-layout{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-catálogo h2{
+    padding: 20px 0;
+    color: #000000;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.catálogo-text{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    color: #000;
+    font-size: 1.5rem;
+}
+
+.section-catálogo img{
+    width: 45%;
+}
+
+.button-catálogo {
+    background: linear-gradient(#fe7467, #fc3836);
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 10rem;
+}
+
+.button-catálogo:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button-catálogo a{
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}   
+
+
+
+@media screen and (max-width: 768px){
+    .catálogo-layout{
+        flex-direction: column-reverse;
+    }
+
+    .catálogo-text{
+        width: 100%;
+        padding: 0.5rem 2rem;
+    }
+
+    .catálogo-text button{
+        align-self: center;
+        margin: 1rem 0;
+    }
+
+    .section-catálogo img{
+        width: 90%;
+    }
+}
